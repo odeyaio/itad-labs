@@ -1,0 +1,21 @@
+{
+  "publisher": "NYC Office of Technology and Innovation / NYC Open Data",
+  "dataset": "311 Service Requests from 2020 to Present",
+  "source_url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24select=unique_key%2Ccreated_date%2Cclosed_date%2Ccomplaint_type%2Cagency%2Cborough%2Cstatus%2Copen_data_channel_type&%24where=borough+%3D+%27MANHATTAN%27+AND+created_date+%3E%3D+%272025-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272025-02-01T00%3A00%3A00%27&%24order=created_date%2Cunique_key&%24limit=100000",
+  "download_date": "2026-10-14",
+  "filename": "nyc311_manhattan_2025-01.csv",
+  "size_bytes": 7186012,
+  "row_count": 61331,
+  "fields": [
+    "unique_key",
+    "created_date",
+    "closed_date",
+    "complaint_type",
+    "agency",
+    "borough",
+    "status",
+    "open_data_channel_type"
+  ],
+  "sha256": "645bfe253cf4705f35d9381cc26d456b722c18e0bbc96562b4d7e54f247294d8",
+  "transformed_after_download": false
+}
