@@ -3,6 +3,7 @@ import unittest
 from unittest.mock import MagicMock, patch
 
 import requests
+
 from airflow.exceptions import AirflowException
 from ingestion.load_raw import load_to_raw
 

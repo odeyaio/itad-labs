@@ -3,6 +3,7 @@ import logging
 from typing import Any
 
 import requests
+
 from airflow.exceptions import AirflowException
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
