@@ -1,0 +1,11 @@
+{
+  "path": "s3://raw/nyc311_manhattan/ingested_on=2026-10-14/nyc311_manhattan_2025-01.csv",
+  "size_bytes": 7186012,
+  "sha256": "645bfe253cf4705f35d9381cc26d456b722c18e0bbc96562b4d7e54f247294d8",
+  "etag": "\"f927e83ae1ca01aae0112cf7a991700f\"",
+  "last_modified": "2026-10-14T16:59:22+00:00",
+  "partition_object_count": 1,
+  "partition_keys": [
+    "nyc311_manhattan/ingested_on=2026-10-14/nyc311_manhattan_2025-01.csv"
+  ]
+}

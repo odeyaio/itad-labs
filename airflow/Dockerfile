@@ -1,13 +1,13 @@
-FROM ghcr.io/astral-sh/uv:0.11.26 AS uv
 FROM apache/airflow:2.10.5-python3.12
-
-COPY --from=uv /uv /uvx /bin/
 
 USER airflow
 WORKDIR /opt/airflow/project
 
 COPY --chown=airflow:root pyproject.toml uv.lock ./
-RUN uv sync --locked --no-dev --no-install-project
+ENV UV_PROJECT_ENVIRONMENT=/home/airflow/.local
+RUN uv export --locked --no-dev --no-emit-project \
+    --prune dbt-duckdb --prune duckdb --output-file .airflow-requirements.txt \
+    && uv pip sync --require-hashes .airflow-requirements.txt \
+    && rm .airflow-requirements.txt
 
-ENV PATH="/opt/airflow/project/.venv/bin:${PATH}"
-
+COPY --from=apache/airflow:2.10.5-python3.12 /home/airflow/.local/bin/uv /usr/local/bin/uv
