@@ -1,0 +1,7 @@
+{
+  "buckets": [
+    "mart",
+    "raw",
+    "staging"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "state": "success",
+    "tasks": [
+        {
+            "state": "success",
+            "attempt": 2,
+            "task_id": "load_to_raw"
+        },
+        {
+            "state": "success",
+            "attempt": 2,
+            "task_id": "wait_for_primary_source"
+        }
+    ],
+    "dag_id": "ingest_raw",
+    "run_id": "lab02-2026-10-14",
+    "logical_date": "2026-10-14T00:00:00+00:00"
+}
